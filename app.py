@@ -11,8 +11,8 @@ import sys
 class CrackPlaxis():
     def start():
         try:
-            ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable,
-                                    __file__, None, 1)
+            #ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable,
+            #                        __file__, None, 1)
 
             with open(host_path) as file:
                 array = [row.strip() for row in file]
